@@ -67,8 +67,84 @@ nav li {
     padding: 0px 5px 0px 5px;
 }
 
+/* /////////////////////////////VITRINE/////////////////////////////////////// */
+
+#vitrine{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-family: 'Montserrat', sans-serif;
+
+}
+.produto img{
+    width: 65%;
+}
+.produto{
+    padding: 10px 10px 10px 10px;
+    width: 30%;
+}
+
+
 /* /////////////////////////////BANNER/////////////////////////////////////// */
 
 #banner img {
     width: 100%;
 }
+
+
+footer{
+    height: 340px;
+    background-color: black;
+    padding: 72px 30px 0px 135px;
+    /* display: flex;Como quero que fique apenas o texto em diplay irei criar um classe que 
+    envolva todo o texto e aplicarei displey flex nela */
+}
+footer ul{
+    /* display: flex; Tirei pois esssa propriedade deixa em linha*/ 
+    /* padding-left: 67px; */
+}
+footer ul li{
+    list-style-type: none;
+    padding-bottom: 20px;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: bold;
+    
+}
+.logo-footer{
+    width: 135px; /* Uso o width para não distorcer a imagem*/
+    /* height: 100px; */
+    float: left;
+}
+
+.texto-footer{
+    display: flex;
+    padding-top: 20px;
+}
+.icon-redes{
+    padding-left: 226px;
+}
+.icon-redes img{
+    padding-left: 16px;
+    width: 50px;
+    height: 50px;
+}
+footer ul{
+    /* display: flex; Tirei pois esssa propriedade deixa em linha*/ 
+    padding-left: 67px;
+}
+footer ul li{
+    list-style-type: none;
+    padding-bottom: 20px;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+footer ul li a{
+    color: white;
+    text-decoration: none;
+}
+
