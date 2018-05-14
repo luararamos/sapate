@@ -68,25 +68,6 @@ nav li {
     padding: 0px 5px 0px 5px;
 }
 
-/* PARALAXI */
-.parallax { 
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    
-}
-
-
-/* BANNER - PARALAXI */
-#parallax-topo{
-    min-height: 350px;
-    background-size: 1349px;
-    background-image: url("img/verao_tratada_azul.jpg");
-    background-position-y: -99px;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-}
 
 /* /////////////////////////////VITRINE/////////////////////////////////////// */
 
