@@ -12,6 +12,7 @@
 </head>
 
 <body>
+
     <header>
         <img src="sapate6.jpg" alt="">
         <div class="busc_carr">
@@ -38,8 +39,9 @@
         </ul>
     </nav>
 
-    <section id="banner">
-        <img src="img/verao_tratada_azul.jpg" alt="">
+    <section class="parallax" id="parallax-topo">
+        <!-- <img src="img/verao_tratada_azul.jpg" alt=""> -->
+
     </section>
     <section id="vitrine">
         <div class="produto">
@@ -119,12 +121,42 @@
             <div class="txt-produto">
                 <h3>Calu</h3>
                 <p>Tenis Calu Flatform Floral A35</p>
-                <p>  R$ 99,99</p>
+                <p> R$ 99,99</p>
             </div>
         </div>
 
 
     </section>
+    <section id="txt">
+        <h3> Quer provar o sapato na loja? Veja a rota mais rápida. </h3>
+    </section>
+    <section id="mapa">
+
+        <div id="map" style="width: 500px; height: 500px;"></div>
+
+        <div class="rotas">
+            <input id="srcOrigem" list="addressSuggest" type="text" oninput="if (this.value.length > 3) {autocompleteMap(this.value)}"
+                placeholder="Origem">
+            <input id="srcDestino" list="addressSuggest" type="text" oninput="if (this.value.length > 3) {autocompleteMap(this.value)}"
+                value="wework" placeholder="Destino">
+
+
+            <select id="modeRouter" onchange="trackRouter()">
+                <option value="DRIVING">Carro</option>
+                <option value="WALKING">A pé</option>
+                <option value="BICYCLING">Bicicleta</option>
+                <option value="TRANSIT">Transporte público</option>
+            </select>
+
+            <button type="button" onclick="trackRouter()">Procurar</button>
+
+            <label id="msgMap"></label>
+
+            <datalist id="addressSuggest">
+        </div>
+        </datalist>
+    </section>
+
 
     <footer>
         <img src="img/sapate-branco.png" class="logo-footer">
@@ -183,6 +215,10 @@
         </div>
 
     </footer>
+
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAxd1cFPVtWcK_7mhsp9LvTSY6RVsk3SXU&callback=initMap">
+    </script>
+    <script type="text/javascript" src="/apiMaps-minify.js"></script>
 
 </body>
 

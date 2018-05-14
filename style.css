@@ -52,6 +52,7 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
 
 nav a {
@@ -65,6 +66,26 @@ nav li {
     list-style: none;
     display: inline;
     padding: 0px 5px 0px 5px;
+}
+
+/* PARALAXI */
+.parallax { 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}
+
+
+/* BANNER - PARALAXI */
+#parallax-topo{
+    min-height: 350px;
+    background-size: 1349px;
+    background-image: url("img/verao_tratada_azul.jpg");
+    background-position-y: -99px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
 }
 
 /* /////////////////////////////VITRINE/////////////////////////////////////// */
@@ -84,9 +105,31 @@ nav li {
     padding: 10px 10px 10px 10px;
     width: 30%;
 }
+.txt-produto{
+    text-align: center;
+}
 
+/* MAPA*/
+#txt{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    text-align: center;
+    padding: 40px 10px 20px 10px;
+}
+#mapa{
+    display: flex;
+    justify-content: center;
+}
+.rotas{
+    display: block;
+    width: 30%;
+    padding: 20px 10px 20px 10px;
+}
+.rotas input{
+    margin: 20px 10px 20px 10px;
+}
 
-/* /////////////////////////////BANNER/////////////////////////////////////// */
+/* /////////////////////////////FOOTER/////////////////////////////////////// */
 
 #banner img {
     width: 100%;
